@@ -1,33 +1,66 @@
 .App {
-  text-align: center;
+  background-image: url("https://files.slack.com/files-tmb/T039C2PUY-FHRT5U458-4ffb77d19d/header-bg_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  background: transparent;
+  height: 9vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: 'Kaushan Script', cursive;
+  color: #fad249;
+  font-size: 28px;
+}
+.menu-btn {
+  display: none;
+}
+img {
+  height: 25px;
+  width: 25px;
+}
+ul {
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  width: 40vw;
 }
 
-.App-link {
-  color: #61dafb;
+#services:hover {
+  color: #fad249;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#portfolio:hover {
+  color: #fad249;
+}
+#about:hover {
+  color: #fad249;
+}
+#team:hover {
+  color: #fad249;
+}
+#contact:hover {
+  color: #fad249;
+}
+main {
+  height: 91vh;
+  margin-top: 9vh;
+}
+
+@media (max-width: 994px) {
+  .menu-btn {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    width: 10vw;
   }
-  to {
-    transform: rotate(360deg);
+  ul {
+    display: none;
   }
 }

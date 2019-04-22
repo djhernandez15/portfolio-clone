@@ -1,26 +1,29 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <body className="App">
+        <nav className="nav-bar">
+          <header className="App-header">Start Bootstrap</header>
+          <div className="menu-btn">
+            <img
+              className="burger-btn"
+              src="https://previews.123rf.com/images/fokaspokas/fokaspokas1809/fokaspokas180900164/108564673-hamburger-menu-web-icon-white-icon-with-shadow-on-transparent-background.jpg"
+              alt="hamburger button"
+            />
+          </div>
+          <ul>
+            <li id="services">SERVICES</li>
+            <li id="portfolio">PORTFOLIO</li>
+            <li id="about">ABOUT</li>
+            <li id="team">TEAM</li>
+            <li id="contact">CONTACT</li>
+          </ul>
+        </nav>
+        <main></main>
+      </body>
     );
   }
 }
